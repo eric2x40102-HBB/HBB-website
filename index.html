@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>HBB — 破土而生</title>
+<meta name="description" content="HBB：源於自然，破土而生。嘉義在地契作綠竹筍、沙拉筍等當季鮮筍，簡單好味，全品項均一價 NT$120。" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- Preloader -->
+<div id="preloader">
+  <div class="preloader-inner">
+    <div class="preloader-mark">HBB</div>
+    <div class="preloader-bar"><div class="preloader-bar-fill" id="preloaderBarFill"></div></div>
+    <div class="preloader-pct" id="preloaderPct">0%</div>
+  </div>
+</div>
+
+<!-- Ambient background glow -->
+<div class="bg-glow" aria-hidden="true">
+  <span class="glow glow-fern"></span>
+  <span class="glow glow-gold"></span>
+</div>
+
+<!-- Navbar -->
+<nav class="navbar glass">
+  <a href="#hero" class="navbar-logo">HBB</a>
+  <ul class="navbar-links">
+    <li><a href="#about">關於我們</a></li>
+    <li><a href="#products">產品介紹</a></li>
+    <li><a href="#quote">永續理念</a></li>
+    <li><a href="#footer">聯繫我們</a></li>
+  </ul>
+  <a href="#cta" class="btn-pill">立即選購</a>
+</nav>
+
+<!-- Floating glass card -->
+<aside class="floating-card glass" id="floatingCard">
+  <div class="floating-card-index" id="floatingCardIndex">01 · 生長週期</div>
+  <div class="floating-card-title" id="floatingCardTitle">八秒之間</div>
+  <p class="floating-card-desc" id="floatingCardDesc">這段動畫凝結了數月的自然歷程，一節一節，未曾停歇。</p>
+  <div class="floating-card-progress"><div class="floating-card-progress-fill" id="floatingCardProgressFill"></div></div>
+</aside>
+
+<main>
+
+  <!-- Hero: scroll-driven frame sequence -->
+  <section class="hero" id="hero">
+    <div class="hero-pin">
+      <canvas id="frameCanvas"></canvas>
+      <div class="hero-scrim"></div>
+
+      <div class="hero-captions">
+        <div class="caption" data-stage="0">
+          <span class="eyebrow">HBB · 源於自然</span>
+          <h1>深藏土壤</h1>
+          <p>在無人知曉之處，力量早已悄然蓄勢。</p>
+        </div>
+        <div class="caption" data-stage="1">
+          <span class="eyebrow">HBB · 生長的開始</span>
+          <h1>破土而生</h1>
+          <p>歷經寒暑更迭，只為此刻的綻放。</p>
+        </div>
+        <div class="caption" data-stage="2">
+          <span class="eyebrow">HBB · 向陽而生</span>
+          <h1>節節攀升</h1>
+          <p>每一寸生長，都是自然給出的答案。</p>
+        </div>
+        <div class="caption" data-stage="3">
+          <span class="eyebrow">HBB · 自然造物</span>
+          <h1>破土而生，HBB</h1>
+          <p>從山林深處，到你手中的純粹。</p>
+          <div class="cta-row">
+            <a href="#products" class="btn-primary">探索系列</a>
+            <a href="#about" class="btn-ghost">品牌理念</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="scroll-hint" id="scrollHint">
+        <span>向下滾動，見證破土而生</span>
+        <div class="scroll-hint-line"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="intro reveal" id="about">
+    <span class="eyebrow">ABOUT HBB · 關於我們</span>
+    <h2>我們，是一群相信竹筍的人。</h2>
+    <p class="intro-text">
+      HBB 成立於嘉義山區，與在地竹農長期契作，專注於綠竹筍、沙拉筍等當季鮮筍的採收與分裝。我們相信，好味道的秘訣不在複雜的調味，而在清晨帶著露水採下的那份新鮮——從產地到餐桌，盡量縮短時間，讓筍子自己說話。
+    </p>
+    <ul class="about-stats">
+      <li><span>清晨採收</span>當日分裝出貨</li>
+      <li><span>在地契作</span>與嘉義竹農長期合作</li>
+      <li><span>簡單調味</span>不掩蓋食材本味</li>
+    </ul>
+  </section>
+
+  <!-- Bento grid -->
+  <section class="grid-section" id="values">
+    <div class="bento-grid">
+
+      <article class="bento-card featured span-2 reveal" style="background-image: url('frames/frame_0096.jpg');">
+        <span class="eyebrow">Featured</span>
+        <h3>破土瞬間</h3>
+        <p>捕捉生命裡最有力量的一刻，也是每一份 HBB 鮮筍的起點。</p>
+      </article>
+
+      <article class="bento-card glass reveal reveal-delay-1">
+        <div class="bento-card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20c8 0 14-6 14-14v-2h-2C8 4 4 10 4 18v2z"/><path d="M4 20c4-4 8-7 14-12"/></svg>
+        </div>
+        <h3>天然生長</h3>
+        <p>不假外力，順應四季節律，讓每一株都依自己的步調生長。</p>
+      </article>
+
+      <article class="bento-card glass reveal reveal-delay-2">
+        <div class="bento-card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M3 19h18"/><path d="M5 19l6-11 4 7 3-5 3 9"/></svg>
+        </div>
+        <h3>永續林地</h3>
+        <p>取材自可持續經營的原始竹林，取之有度，還之於山。</p>
+      </article>
+
+      <article class="bento-card glass reveal reveal-delay-3">
+        <div class="bento-card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l1.8 5.6L19 9l-5.2 1.4L12 16l-1.8-5.6L5 9l5.2-1.4z"/></svg>
+        </div>
+        <h3>匠心工藝</h3>
+        <p>每一份鮮筍皆經職人手工修整，容不下一絲敷衍。</p>
+      </article>
+
+      <article class="bento-card glass reveal reveal-delay-4">
+        <div class="bento-card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c3 4 5 7.5 5 10.5a5 5 0 0 1-10 0C7 10.5 9 7 12 3z"/></svg>
+        </div>
+        <h3>純淨無染</h3>
+        <p>友善耕作、不過度加工，保留竹筍最初的清甜與脆度。</p>
+      </article>
+
+      <article class="bento-card glass reveal reveal-delay-5">
+        <div class="bento-card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3 7 7 0 0 0 21 12.8z"/></svg>
+        </div>
+        <h3>靜心而製</h3>
+        <p>當日採收、當日分裝，用時間換取最好的鮮度。</p>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- Products & pricing -->
+  <section class="products-section" id="products">
+    <div class="products-heading reveal">
+      <span class="eyebrow">PRODUCTS · 產品介紹</span>
+      <h2>當季鮮筍，簡單好味</h2>
+      <p class="products-subtitle">不多加調味，讓筍子自己說話。全品項均一價 <strong>NT$120</strong>。</p>
+    </div>
+
+    <div class="product-grid">
+
+      <article class="product-card glass reveal reveal-delay-1">
+        <div class="product-tag">鮮筍</div>
+        <div class="bento-card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c3 4 5 7.5 5 10.5a5 5 0 0 1-10 0C7 10.5 9 7 12 3z"/><path d="M12 8v10"/></svg>
+        </div>
+        <h3>鮮採綠竹筍</h3>
+        <p>清晨現採，甘甜清脆，清蒸、涼拌皆宜的當家品項。</p>
+        <div class="price-row">
+          <span class="price"><small>NT$</small>120</span>
+          <span class="price-unit">/ 份</span>
+          <a href="#footer" class="btn-pill price-cta">選購</a>
+        </div>
+      </article>
+
+      <article class="product-card glass reveal reveal-delay-2">
+        <div class="product-tag">涼拌</div>
+        <div class="bento-card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h16"/><path d="M6 12c0 4 2.5 7 6 7s6-3 6-7"/><path d="M9 5l1.5 3M15 5l-1.5 3"/></svg>
+        </div>
+        <h3>涼拌沙拉筍</h3>
+        <p>細切沙拉筍佐清爽醬汁，開胃解膩的餐桌常客。</p>
+        <div class="price-row">
+          <span class="price"><small>NT$</small>120</span>
+          <span class="price-unit">/ 份</span>
+          <a href="#footer" class="btn-pill price-cta">選購</a>
+        </div>
+      </article>
+
+      <article class="product-card glass reveal reveal-delay-3">
+        <div class="product-tag">常備</div>
+        <div class="bento-card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4v16M9 4v16M13 4v16M17 4v16" /></svg>
+        </div>
+        <h3>手切筍絲</h3>
+        <p>細切成絲，方便入菜，快速上桌的家常滋味。</p>
+        <div class="price-row">
+          <span class="price"><small>NT$</small>120</span>
+          <span class="price-unit">/ 份</span>
+          <a href="#footer" class="btn-pill price-cta">選購</a>
+        </div>
+      </article>
+
+      <article class="product-card glass reveal reveal-delay-4">
+        <div class="product-tag">涼拌</div>
+        <div class="bento-card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l1.8 5.6L19 9l-5.2 1.4L12 16l-1.8-5.6L5 9l5.2-1.4z"/></svg>
+        </div>
+        <h3>涼拌桂竹筍</h3>
+        <p>口感爽脆的桂竹筍，簡單調味就很下飯。</p>
+        <div class="price-row">
+          <span class="price"><small>NT$</small>120</span>
+          <span class="price-unit">/ 份</span>
+          <a href="#footer" class="btn-pill price-cta">選購</a>
+        </div>
+      </article>
+
+    </div>
+
+    <p class="products-note reveal">＊ 每份約 200g，實際重量依當季筍況略有差異。</p>
+  </section>
+
+  <!-- Quote -->
+  <section class="quote-section" id="quote">
+    <div class="quote-glow" aria-hidden="true"></div>
+    <blockquote class="reveal">
+      「真正的力量，不在於一夕之間的綻放，<br class="br-desktop" />而在於日復一日，向光生長的堅持。」
+    </blockquote>
+    <p class="quote-attribution reveal reveal-delay-1">— HBB 山林手記</p>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section" id="cta">
+    <h2 class="reveal">準備好，見證下一次生長</h2>
+    <div class="cta-actions reveal reveal-delay-1">
+      <a href="#products" class="btn-primary">探索完整系列</a>
+      <a href="#footer" class="btn-ghost">預約產地之旅</a>
+    </div>
+  </section>
+
+</main>
+
+<!-- Footer -->
+<footer class="site-footer glass reveal" id="footer">
+  <div class="footer-top">
+    <div class="footer-brand">
+      <span class="navbar-logo">HBB</span>
+      <p>源於自然，破土而生。取材山林，慢工細作，只為留下最有生命力的形態。</p>
+    </div>
+    <div class="footer-col">
+      <h4>探索</h4>
+      <ul>
+        <li><a href="#about">關於我們</a></li>
+        <li><a href="#products">產品介紹</a></li>
+        <li><a href="#quote">永續理念</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>支援</h4>
+      <ul>
+        <li><a href="#footer">聯繫我們</a></li>
+        <li><a href="#footer">常見問題</a></li>
+        <li><a href="#footer">門市據點</a></li>
+      </ul>
+    </div>
+    <div class="footer-col footer-newsletter">
+      <h4>訂閱山林訊息</h4>
+      <p>第一時間收到 HBB 的最新系列與生長紀事。</p>
+      <form class="newsletter-form" onsubmit="return false;">
+        <input type="email" placeholder="輸入你的 Email" aria-label="Email" />
+        <button type="submit">訂閱</button>
+      </form>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 HBB. All rights reserved.</p>
+    <ul class="footer-legal">
+      <li><a href="#footer">隱私權政策</a></li>
+      <li><a href="#footer">服務條款</a></li>
+    </ul>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
